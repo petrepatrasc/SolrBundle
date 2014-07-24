@@ -58,7 +58,7 @@ class MetaInformation
     public function getEntityId()
     {
         if ($this->entity !== null) {
-            return $this->entity->getId();
+            return $this->entity->getSolrId();
         }
 
         return 0;

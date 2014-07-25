@@ -35,7 +35,7 @@ class DoctrineHydrator implements Hydrator
      */
     public function hydrate($document, MetaInformation $metaInformation)
     {
-        $entityId = $document->id;
+        $entityId = $document->id_i;
         $doctrineEntity = $this->doctrine
             ->getManager()
             ->getRepository($metaInformation->getClassName())

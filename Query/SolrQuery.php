@@ -93,6 +93,11 @@ class SolrQuery extends AbstractQuery
         return $this->searchTerms;
     }
 
+    public function setSearchTerms($searchTerms)
+    {
+        $this->searchTerms = $searchTerms;
+    }
+
     /**
      * @param array $value
      */
